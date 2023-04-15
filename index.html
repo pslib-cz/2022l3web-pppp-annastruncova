@@ -3,10 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Úvod</title>
+
+    <script src="./JS/glide.min.js" charset="utf-8"></script>
+    <script src="./JS/hamburger.js"></script>
+
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="./CSS/glide.core.min.css">
+    <link rel="stylesheet" href="./CSS/glide.theme.min.css">
+
+
 </head>
 <body>
-    
+    <header class="header">
+        <section class="header__top">
+            <div class="header__wraper"></div>
+                <div class="hamburger-panel">
+                    <section class="header__info">
+                        <div class="header__info--left">
+                            <a href="tel:+420 777 666 666" class="header__phone">+420 777 666 666</a>
+                            <a href="mailto:info@l3web.cz" class="header__email">info@l3web.cz</a>
+                        </div>
+                          <div class="header__info--right">  
+                            <a href="#" class="header__login">Přihlášení</a>
+                            <a href="#" class="header__logo"><img class="logo__img" src="./logo/Logo5-1.svg" alt="Logo"></a>
+                        </div>
+                        
+                    </section>
+                    <a href="javascript:void(0)" class="hamburger hamburger-btn hamburger-zone">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                <nav class="hamburger-nav hamburger-zone">
+                    <ul>
+                        <li><a class="header__link" href="./index.html">Úvod</a></li>
+                        <li><a class="header__link" href="./funkce.html">Funkce</a></li>
+                        <li><a class="header__link" href="./Podpora.html">Podpora</a></li>
+                        <li><a class="header__link"href="./cenik.html">Ceník</a></li>
+                        <li><a class="header__link" href="./kontakt.html">Kontakt</a></li>
+                        <li><a class="header__link"><button type="button" class="button" title="Zkušební verze">Vyzkoušejte demo</button></li></a>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main class="main">
+            <section class="main__intro">
+                <div class="main__wraper">
+                    <h1 class="main__title">Řízení školy nebylo jednodušší</h1>
+                    <p class="main__text">Představujeme Software pro řízení lidských zdrojů ve škole nebylo efektivnější.</p>
+                    <ul class="main__list">
+                        <li class="main__item">Počítá mzdové náklady</li>
+                        <li class="main__item">Generuje lidi</li>
+                        <li class="main__item">Tvoří budoucnost</li>
+                    </ul>
+                    <a><button type="button" class="button" title="Zkušební verze">Vyzkoušejte demo</button></a>
+                </div>
+                <a href="./img/Rectangle 49.png" class="image-link"><img class="img" src="./img/Rectangle 49.png" alt="Řízení školy"></a>
+            </section>
+            <section class="main__links">
+                <a href="#" class="main__link"><img class="main__link--image" href="./logo/Logo4.svg"></a>
+                <a href="#" class="main__link"><img class="main__link--image" href="./logo/Logo5.svg"></a>
+                <a href="#" class="main__link"><img class="main__link--image" href="./logo/Logo2.svg"></a>
+                <a href="#" class="main__link"><img class="main__link--image" href="./logo/Logo3.svg"></a>
+                <a href="#" class="main__link"><img class="main__link--image" href="./logo/Logo1.svg"></a>
+            </section>
+            <section class="main__advantages"> 
+                <h2 class="advantages--tittle">Výhody řešení</h2>
+                <div class="images glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="circle"><img src="./icons/mdi_timer-sand.svg" class="glide__icon"></img></div>
+                                <p><span>Zkracuje čas práce</span> díky velkému množství funkcí.</p>
+                                <div class="advantages__card">
+                                    <h4>Popisy pracovních míst</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. VSero ipsum sint quia, quae possimus </p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="circle"><img src="./icons/material-symbols_error-med-outline-rounded.svg" class="glide__icon"></img></div>
+                                <p>Poskytuje selektivní přístup všem pracovníkům</p>
+                                <div class="advantages__card">
+                                    <h4>Administrace aplikace</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ipsum sint quia, quae possimus necessitatibus </p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="circle"><img src="./icons/material-symbols_compare-arrows.svg" class="glide__icon"></img></div>
+                                <p>Umožňuje outsourcing personalistických procesů</p>
+                                <div class="advantages__card">
+                                    <h4>Tvorba organizační struktury</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  Vero ipsum sint quia, quae possimus necessitatibus </p>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="circle"><img src="./icons/material-symbols_playlist-add-check-circle-outline.svg" class="glide__icon"></img></div>
+                                <p>Zaručuje splnění požadavků ISO a IATF</p>
+                                <div class="advantages__card">
+                                    <h4>Firemní procesy</h4>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero ipsum sint quia, quae possimus necessitatibus veniam </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="advantages__cards">
+                    
+                    
+                    
+                    
+                </div>
+                <a><button type="button" class="button" title="Zkušební verze">Vyzkoušejte demo</button></a>
+            </section>
+            <section class="main__story">
+                <h2>Příběh</h2>
+                <div class="story">
+                    <div class="story__text">
+                        <h3>Jsme dva - Honza a Tomáš</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex placeat doloremque omnis neque, voluptatibus sit eveniet aut labore animi dolorum quibusdam vel architecto facere obcaecati vitae perferendis, rem voluptas?</p>
+                        <a class="header__link"><button type="button" class="button" title="Zkušební verze">Přečíst celý příběh</button>
+                    </div>
+                    <a class="image-link" href="#"><img class="img" src="./img/Rectangle 34.png"></a>
+                </div>
+            </section>
+            <section class="main__feedback-wrapper">
+                <h2>Napsali o nás</h2>
+                <div class="feedback-wrapper__cards">
+                    <div class="feedback__card">
+                        <a href="#"><img src="./img/Ellipse 29-1.jpg"></a>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem error</p>
+                            <p>Michaela Komorousová</p>
+                            <p>Personalista, Magna Exteriors s.r.o.</p>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <a href="něco"><img src="./img/Ellipse 29-2.jpg"></a>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem error</p>
+                            <p>Alžběta Formánková</p>
+                            <p>Personalista, Magna Exteriors s.r.o.</p>
+                        </div>
+                    </div>
+                    <div class="feedback__card">
+                        <a href="něco"><img src="./img/Ellipse 29.jpg"></a>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum exercitationem error</p>
+                            <p>Anna Suchánková</p>
+                            <p>Personalista, Magna Exteriors s.r.o.</p>
+                        </div>
+                    </div>
+                </div>
+                <a><button type="button" class="button" title="Chci si přečíst více">Chci si přečíst více</button></a>
+            </section>
+            <section class="main__news-section">
+                <h2>Aktuality</h2>
+                <div class="news-section__cards">
+                    <div class="news-section__card">
+                        <a href=""><img src="./icons/Frame 74.svg" alt="Popis ikony"></a> 
+                        <div class="news-section__cards--text"> 
+                            <h3>Přidán nový modul do administrace</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laboriosam deserunt veritatis quia odio voluptatibus amet aut, quos laborum in sint a facere excepturi non, praesentium magnam repudiandae. Ipsa, aspernatur?</p>
+                            <a class="read-more-link">Přečíst celý článek</a>
+                        </div>
+                    </div>
+                    <div class="news-section__card">
+                        <a href=""><img src="./icons/Frame 76.svg" alt="Popis ikony"></a>
+                        <div class="news-section__cards--text"> 
+                            <h3>Přidán nový modul do administrace</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium nemo iste, officia vel, aperiam perspiciatis obcaecati rem molestiae labore natus eum? Architecto possimus sit sed provident quisquam repudiandae, quo ratione.</p>
+                            <a class="read-more-link">Přečíst celý článek</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <div class="footer__wrapper">
+                
+                <div class="footer__address">
+                    <a href="#" class="footer__logo"><img class="footer__logo-img" src="./logo/Logo5-1.svg" alt="Logo"></a>
+                    <p>Pslib.cz s.r.o</p>       
+                    <p>Masarykova 12345</p>
+                    <p>460 00 Liberec</p>
+                    <div class="footer__social">
+                    <a href="tel:+420 777 666 666" class="social footer__phone">+420 777 666 666</a>
+                    <a href="mailto:info@l3web.cz" class="social footer__email">info@l3web.cz</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="footer__wrapper">
+                <h4 class="footer__heading">Videotutoriály</h4>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">CSS</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Animace</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Stříhání videa</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Výběr barev</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Plánování pracovníků a mezd</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Všechna videa</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer__section">
+            <div class="footer__wrapper">
+                <h4 class="footer__heading">Podpora</h4>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">Přihlášení k účtu</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Školení</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">FAQ - Časté dotazy</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Kontakty</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Videatutoriály</a></li>
+                </ul>
+            </div>
+            <div class="footer__wrapper">
+                <h4 class="footer__heading">Menu</h4>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#" class="footer__link">Úvod</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Funkce</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Podpora</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Ceník</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Kontakt</a></li>
+                </ul>
+            </diiv>
+        </section>
+        <div class="footer__social-info">
+            <a href="#" class="footer__social-link-youtube" alt="youtube"></a>
+            <a href="#" class="footer__social-link-linkedin" alt="linked-in"></a>
+        </div>
+    </footer>
+
+    <script> 
+    new Glide(".images", {
+        type: 'carousel',
+        perView: 5,
+        focusAt: 'center',
+        gap: 40,
+        breakpoints: {
+            1200:{
+                perView: 3
+            },
+            800:{
+                perView: 2
+            },
+        }
+
+    }).mount();
+    </script>
 </body>
 </html>
+
+
+
+
+

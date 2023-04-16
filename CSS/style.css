@@ -60,7 +60,7 @@ li{
 
 
 
-
+/*ŮVOD*/
 
 /*main*/
 .main__intro{
@@ -83,19 +83,7 @@ li{
 }
 .img{
     border-radius: 2rem;
-}
-
-    
-
-
-
-
-
-
-
-
-
-
+}    
 /*výhody řešení*/
 .main__advantages{
     background-color: var(--light-blue-opacity);
@@ -136,9 +124,6 @@ li{
 .glide__slides{
     overflow: visible;
 }
-
-
-
 .advantages__cards {
     display: flex;
     flex-direction: column;
@@ -154,12 +139,6 @@ li{
     box-shadow: 0px 0px 25px var(--light-blue-opacity);
     border-radius: 8px;
 }
-
-
-
-
-
-
 /*příběh*/
 .main__story{
     margin: 1em;
@@ -179,10 +158,6 @@ li{
     gap: 0.5rem;
     padding:  0.5rem 0;
 }
-
-
-
-
 /*napsali o nás*/
 .main__feedback-wrapper{
     display: flex;
@@ -199,15 +174,6 @@ li{
     align-items: center;
     gap: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
 /*aktuality*/
 .main__news-section{
     display: flex;
@@ -238,7 +204,65 @@ li{
     font-weight: 700;
 }
 
+
+/*KONTAKT*/
+.img__mapa{
+    max-width: 100%;
+    height: auto;
+    border-top: 4px solid var(--key-color);
+}
+.info-billboard{
+    max-width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+.info{
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1440px){
+    /*ŮVOD*/
     .news-section__cards{
         padding: 0.5rem;
         flex-direction: row;

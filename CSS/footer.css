@@ -8,6 +8,9 @@
         align-items: flex-start;
         padding: 1rem 0.5rem;
         gap: 20px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .footer__address{
         color: var(--light-blue);
@@ -44,6 +47,8 @@
         align-items: flex-start;
         padding: 0px;
         gap: 4rem;
+        width: 100%;
+        
     }
     .footer__link{
         color: var(--light-blue);
@@ -59,6 +64,7 @@
         display: flex;
         flex-direction: row;
         flex-direction: column;
+        width: 50%;
     }
     .footer__logo-img{
         height: 2rem;
@@ -75,6 +81,7 @@
     position: relative; 
 
     }
+
 
     .footer__email:before {
     content: "";

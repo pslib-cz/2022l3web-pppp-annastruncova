@@ -13,6 +13,7 @@
     background-color: var(--light-gray);
     display: flex;
     justify-content: flex-end;
+   
 }
 .hamburger {
     display: block;
@@ -164,7 +165,7 @@
     height: 16px;
     background: url("../icons/telephone.svg") no-repeat center center;
     font-size: 2rem;
-    transform: scale(150%);
+    transform: scale(200%);
     position: relative;
  
 }
@@ -177,7 +178,7 @@
     height: 16px;
     background: url("../icons/email.svg") no-repeat center center;
     font-size: 2rem;
-    transform: scale(150%);
+    transform: scale(200%);
     position: relative;
    
 }
@@ -188,7 +189,7 @@
     height: 16px;
     background: url("../icons/People\ in\ circle.svg") no-repeat center center;
     font-size: 2rem;
-    transform: scale(150%);
+    transform: scale(200%);
     position: relative; 
 
 }
@@ -231,15 +232,6 @@
 }
 
 
-  .button{
-      padding: 0.5rem 1rem; 
-      font-size: 16px; 
-      background-color: var(--key-color); 
-      color: var(--light);
-      border: none; 
-      border-radius: 2rem;
-      cursor: pointer;  
-  }
 
 
 
@@ -252,7 +244,8 @@
 
 
 
-@media screen and (min-width: 1440px) {
+
+@media screen and (min-width: 900px) {
     .hamburger-panel {
         display: absolute;
 
@@ -268,11 +261,9 @@
 
     .hamburger-nav ul {
         display: flex;
-
-        height: 100%;
-        width: 33vw;
-        max-width: 200px;
         border-right: 1px solid var(--light);
+        justify-content: flex-end;
+        align-items: center;
     }
 
     .header__info{
@@ -280,13 +271,13 @@
         flex-direction: row;
         align-items: baseline;
         width: 100%;
+
     }
     .header__info div{
         width: 50%;
     }
     .hamburger-nav{
         background-color: var(--light);
-        margin-right: 2rem;
     }
     .hamburger-nav li{
         background-color: var(--light);
@@ -294,10 +285,17 @@
     .hamburger-nav li:nth-child(even){
         background-color: var(--light);
     }
-    .hamburger-nav ul{
-        align-items: center
-    }
     .header__top{
         position: static;
+    }
+    .header__link {
+    background: 
+        linear-gradient(currentColor 0 0) 
+        bottom /var(--d, 0) 3px 
+        no-repeat;
+    transition:0.5s;
+    }
+    .header__link:hover {
+        --d: 100%;
     }
 }

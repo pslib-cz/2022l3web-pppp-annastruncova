@@ -119,6 +119,9 @@ ul{
     margin: 5rem;
     text-align: center;
 }
+li:hover{
+    background-color: none;
+}
 
 
 
@@ -135,8 +138,8 @@ ul{
 }
 .main__item {
     position: relative; 
-    padding-left: 20px; 
-    margin-bottom: 10px; 
+    padding-left: 2rem; 
+    margin-bottom: 1rem; 
     background-repeat: no-repeat; 
     background-position: left center; 
     background-size: 16px; 
@@ -230,9 +233,6 @@ ul{
     margin: 0.5rem;
     align-items: center;
 }
-.feedback-wrapper__cards{
-    
-}
 .feedback__card{
     display: flex;
     flex-direction: row;
@@ -272,9 +272,11 @@ ul{
 
 /*KONTAKT*/
 .img__mapa{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-top: 4px solid var(--key-color);
+    margin: auto;
+    max-width: 80%;
 }
 .info-billboard{
     max-width: 100%; 
@@ -285,6 +287,8 @@ ul{
     flex-direction: column;
     margin: 1rem;
     background-color: var(--light-gray);
+    border-radius: 2rem;
+    padding: 1rem 0.5rem;
 }
 .info{
     margin: 1rem;
@@ -297,10 +301,10 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
+    padding: 2rem;
+    gap: 0.5rem;
     background: #FFFFFF;
-    border-radius: 32px;
+    border-radius: 2rem;
     align-self: stretch;
 }
 
@@ -313,21 +317,41 @@ ul{
     flex-direction: row;
     align-items: center;
 }
+.mini-nav{
+    display: flex;
+    align-items: baseline;
+}
 .function__card{
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 26px;
-    gap: 10px;
+    padding: 3rem 2rem;
+    gap: 1rem;
     background: var(--light);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 0.5rem;
+}
+.function__card:hover > h4{
+    color: var(--key-color)
+
+}
+.function__card:hover::after{
+    content: "";
+    position: absolute; 
+    bottom: -1rem;
+    right: -1rem;
+
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    background-size: 16px; 
+    background-image: url('../icons/Button\ -\ circle.svg'); 
 }
 .function__cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(6, 1fr); 
-    gap: 10px;
+    gap: 1rem;
 }
 .video{
     display: flex;
@@ -352,7 +376,9 @@ ul{
     align-items: center;
     text-align: center;
     gap: 1rem;
-    margin: 1rem;
+    margin: auto;
+    max-width: 50%;
+    margin-bottom: 1rem;
 }
 
 
@@ -385,6 +411,12 @@ ul{
 
 
 @media screen and (min-width: 900px){
+    .main{
+        padding-top: 0;
+    }
+    .hamburger-nav li:hover {
+        background-color: transparent;
+    }
     /*ŮVOD*/
     .news-section__cards{
         padding: 0.5rem;
@@ -399,26 +431,36 @@ ul{
     .story{
 
         flex-direction: row;
-        max-width: 50%;
+        max-width: 80%;
     }
     .main__intro{
         flex-direction: row;
         margin: 0;
     }
     .feedback-wrapper__cards{
-        max-width: 60%;
+        max-width: 80%;
     }
     
     /*FUNKCE*/
     .function__cards{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
+        max-width: 80%;
+        margin: auto;
     }
+    .main__fuction{
+        max-width: 80%;
+        margin: auto;
+    }
+
 
     /*KONTAKT*/
     .info-billboard{
         flex-direction: row-reverse;
         justify-content: flex-end;
+        max-width: 80%;
+        margin: auto;
+        padding: 0.5rem 1rem;
         
     }
     .img__mapa{
@@ -429,6 +471,10 @@ ul{
     .info{
         align-self: stretch;
         justify-content: center;
+        width: 50%;
+    }
+    .info__card{
+        width: 85%;
     }
 }
 

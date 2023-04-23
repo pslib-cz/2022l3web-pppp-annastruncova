@@ -34,11 +34,7 @@
     background-color: var(--light-gray);
     border-bottom: 2px solid var(--light);
 }
-.hamburger-nav li:nth-child(even) {
-    background-color: var(--light-gray);
-}
 .hamburger-nav li:hover {
-    background-color: var(--light-gray);
     color: var(--light);
 }
 
@@ -230,6 +226,11 @@
     height: 2rem;
 
 }
+.header__logo{
+    align-items: baseline;
+    display: flex;
+
+}
 
 
 
@@ -271,6 +272,7 @@
         flex-direction: row;
         align-items: baseline;
         width: 100%;
+        padding: 0.25rem;
 
     }
     .header__info div{

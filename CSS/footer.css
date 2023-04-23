@@ -1,16 +1,11 @@
 @import 'style.css';
 
     .footer {
+        display: grid;
         background-color: var(--medium-blue);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        grid-template-columns: repeat(2, 1fr);
         padding: 1rem 0.5rem;
         gap: 20px;
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
     }
     .footer__address{
         color: var(--light-blue);
@@ -99,7 +94,7 @@
     display: inline-block;
     margin-right: 0.5rem ;
     font-size: 0.5rem;
-    width: 16px;
+    width: 20px;
     height: 16px;
     background: url("../icons/youtube.svg") no-repeat center center;
     transform: scale(150%);
@@ -148,7 +143,7 @@
 
 @media screen and (min-width: 900px) {
     .footer{
-        flex-direction: row;
+        grid-template-columns: repeat(4, 1fr);
     }
 
 

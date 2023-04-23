@@ -56,6 +56,7 @@ li{
     flex-direction: column;
     gap: 1rem;
     padding-top: 3rem;
+    margin-top: 2rem;
 
 }
 ul{
@@ -97,6 +98,7 @@ ul{
 }
 .home a{
     color: var(--dark);
+    font-size: small;
 }
 .home::before {
         content: "";
@@ -104,15 +106,15 @@ ul{
         width: 16px;
         height: 16px;
         background: url("../icons/material-symbols_home-outline-rounded.svg") no-repeat center center;
-        font-size: 2rem;
+        font-size:small;
         position: relative;
         right: 0.25rem;
-    }
+}
 .mini-nav{
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin: 1rem;
+    margin: 0 1rem;
     padding: 0;
 }
   .dot{
@@ -122,6 +124,7 @@ ul{
     background-size: 10px 10px;
     background-repeat: no-repeat;
     background-position: 0 50%;
+    font-size: small;
   }
 .preparing{
     font-size: larger;

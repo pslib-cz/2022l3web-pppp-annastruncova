@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     right: 0;
+    height: 10vh;
 }
 .hamburger-panel {
     background-color: var(--light-gray);
@@ -22,7 +23,10 @@
     background-color: var(--light-gray);
     border-top: 2px solid var(--light);
     border-bottom: 2px solid var(--light);
-
+    display: none;
+}
+.activ{
+    display: flex;
 }
 .hamburger-nav ul {
     margin: 0;
@@ -215,6 +219,7 @@
     flex-direction: row;
     gap: 2rem;
 }
+
 .hamburger-panel {
     padding: 0 0.5rem;
     background-color: var(--light-gray);
@@ -259,7 +264,9 @@
         transform: none;
         
     }
-
+    .header__info--right, .header__info--left {
+        justify-content: space-evenly;
+    }
     .hamburger-nav ul {
         display: flex;
         border-right: 1px solid var(--light);

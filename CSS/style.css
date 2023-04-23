@@ -73,6 +73,10 @@ ul{
     cursor: pointer;
     border: 3px solid var(--key-color);
 }
+.button:hover{
+    background-color: var(--dark-blue);
+    border: 3px solid var(--dark-blue);
+}
 .button__border{
     background-color: var(--light);
     border: 3px solid var(--key-color);
@@ -80,6 +84,10 @@ ul{
     padding: 0.5rem 1rem; 
     font-size: 16px;
     border-radius: 2rem;
+}
+.button__border:hover{
+    background-color: var(--key-color);
+    color: var(--light);
 }
 .highlighter{
     color: var(--key-color);
@@ -104,6 +112,8 @@ ul{
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    margin: 1rem;
+    padding: 0;
 }
   .dot{
     padding-left: 20px;
@@ -316,6 +326,7 @@ li:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 1rem;
 }
 .mini-nav{
     display: flex;
@@ -340,11 +351,12 @@ li:hover{
     content: "";
     position: absolute; 
     bottom: -1rem;
-    right: -1rem;
-
+    left: 2rem;
+    width: 40px;
+    height: 40px;
     background-repeat: no-repeat; 
     background-position: left center; 
-    background-size: 16px; 
+    background-size: 2rem; 
     background-image: url('../icons/Button\ -\ circle.svg'); 
 }
 .function__cards{
@@ -352,11 +364,15 @@ li:hover{
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(6, 1fr); 
     gap: 1rem;
+    margin: 0 1rem;
 }
 .video{
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+}
+.video:hover > p{
+    color: var(--key-color);
 }
 .video__play {
         position: relative;
@@ -365,9 +381,7 @@ li:hover{
         background-position: center;
         background-size: 5rem;
         background-image: url(../icons/material-symbols_play-circle-rounded.svg);
-        
 }
-
 
 /*dotaz k aplikaci*/
 .question-pplication{
